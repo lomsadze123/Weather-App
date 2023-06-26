@@ -78,7 +78,7 @@ const weather = async (city,unit) => {
     unit === 'metric' ? dateTimeSwtch(false) : dateTimeSwtch(true);
     //      -----------------------------
 
-    img.src = `/assets/${data.weather[0].icon}.svg`;
+    img.src = `assets/${data.weather[0].icon}.svg`;
 
     switchBtn.childNodes.forEach(i => i.addEventListener('click', switcher));
 
