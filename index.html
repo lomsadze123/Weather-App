@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpg">
+    <title>Weather app</title>
+</head>
+<body>
+
+    <main class="main">
+        <header class="header">
+            <h1 id="country"></h1>
+            <p id="weatherTitle"></p>
+            <img id="image" src="" alt="weather icon">
+            <h2 id="degree"></h2>
+            <p id="feels"></p>
+        </header>
+        <section class="section">
+            <div class="time_search">
+                <h2 id="time"></h2>
+                <form id="form">
+                    <input id="search" type="text" placeholder="Search a city...">
+                </form>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <p>Humidity</p>
+                    <div class="data">
+                        <img src="assets/humidity.png" alt="humidity">
+                        <div class="unit">
+                            <h3 id="humidity"></h3>
+                            <p>%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <p>Wind speed</p>
+                    <div class="data">
+                        <img class="not" src="assets/wind.png" alt="wind">
+                        <div class="unit">
+                            <h3 id="speed"></h3>
+                            <p id="ms"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <p>Wind direction</p>
+                    <div class="data">
+                        <img src="assets/compass.png" alt="compass" class="not">
+                        <div class="unit">
+                            <h3 id="direction"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <p>Visibility</p>
+                    <div class="data">
+                        <img src="assets/binocular.png" alt="binocular">
+                        <div class="unit">
+                            <h3 id="visibility"></h3>
+                            <p id="km"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <p>Sunrise</p>
+                    <div class="data">
+                        <img src="assets/sunrise.png" alt="sunrise">
+                        <div class="unit">
+                            <h3 id="sunrise"></h3>
+                            <p class="riseTime">AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <p>Sunset</p>
+                    <div class="data">
+                        <img src="assets/sunset.png" alt="sunset" class="not">
+                        <div class="unit">
+                            <h3 id="sunset"></h3>
+                            <p class="riseTime">PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="switch">
+                <p id="metric">Metric System</p>
+                <p id="imperial">Imperial System</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
